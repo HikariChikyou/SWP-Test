@@ -1,3 +1,4 @@
+//test
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -181,6 +182,10 @@ public class Hauptfenster extends javax.swing.JFrame implements ActionListener
     private void kontoauszugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kontoauszugActionPerformed
         Container c=intFrame.getContentPane();
         c.removeAll();
+        JButton b=new JButton("Kontoauszug drucken");
+        b.setActionCommand("drucken");
+        b.addActionListener(this);
+        c.add(b);
         JPanel p=null;
         c.add(new JLabel("Kontoauszug fuer Konto "+gewaehltesKonto+":"));
         int lines=1;
@@ -292,6 +297,8 @@ public class Hauptfenster extends javax.swing.JFrame implements ActionListener
             case "neueVorlage":
                 break;
             case "loeschVorlage":
+                break;
+            case "drucken":
                 break;
             default:
                 break;
