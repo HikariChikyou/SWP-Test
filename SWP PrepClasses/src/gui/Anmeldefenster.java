@@ -83,7 +83,7 @@ public class Anmeldefenster extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void OK_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OK_ButtonActionPerformed
-        // TODO add your handling code here:
+        Hauptfenster.main(new String[]{user_id.getText()});
     }//GEN-LAST:event_OK_ButtonActionPerformed
 
     /**
